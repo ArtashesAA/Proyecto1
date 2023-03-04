@@ -1,5 +1,10 @@
 package view;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
+import model.Agrupacion;
+
 public class Integrantes {
 
 	public static void opcIntegrantes() {
@@ -54,7 +59,11 @@ public class Integrantes {
 	}
 	
 	private static void ordenarPorNombre() {
-		
+		Arrays.sort(GestionPrograma.agrupaciones, new Comparator<Agrupacion>() {
+	        public int compare(Agrupacion a1, Agrupacion a2) {
+	            return a1.getNombre().compareTo(a2.getNombre());
+	        }
+	    });
 	}
 	
 }

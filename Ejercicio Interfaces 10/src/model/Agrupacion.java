@@ -13,6 +13,15 @@ public abstract class Agrupacion implements Comparator<Agrupacion>{
 		
 	}
 
+	public Agrupacion(String nombre, String autor, String autor_musica, String autor_letras, String disfraz) {
+		
+		this.nombre = nombre;
+		this.autor = autor;
+		this.autor_musica = autor_musica;
+		this.autor_letras = autor_letras;
+		this.disfraz = disfraz;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -69,6 +78,8 @@ public abstract class Agrupacion implements Comparator<Agrupacion>{
 				+ getAutor_musica() + ", getAutor_letras()=" + getAutor_letras() + ", getDisfraz()=" + getDisfraz()
 				+ "]";
 	}
+
+	
 	
 	
 }
