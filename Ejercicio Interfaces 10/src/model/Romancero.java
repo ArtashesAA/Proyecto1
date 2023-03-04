@@ -2,15 +2,15 @@ package model;
 
 public class Romancero extends Agrupacion implements Callejera {
 	private String tematica_cartelon;
-	
-	public Romancero() {
-		
-	}
 
+	public Romancero() {
+
+	}
 
 	public String getTematica_cartelon() {
 		return tematica_cartelon;
 	}
+
 	public void setTematica_cartelon(String tematica_cartelon) {
 		this.tematica_cartelon = tematica_cartelon;
 	}
@@ -28,9 +28,6 @@ public class Romancero extends Agrupacion implements Callejera {
 	public String hacerTipo() {
 		return "El romancero " + super.getNombre() + " va de " + super.getDisfraz();
 	}
-	
-	
-
 
 	@Override
 	public String toString() {
@@ -39,11 +36,9 @@ public class Romancero extends Agrupacion implements Callejera {
 				+ ", amoAescucha()=" + amoAescucha() + "]";
 	}
 
-
 	@Override
 	public String amoAescucha() {
 		return "Amo a escuchá el romanero " + super.getNombre();
 	}
-
 
 }

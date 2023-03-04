@@ -86,10 +86,10 @@ public class Concurso {
 	
 	private static void ordenarPorNombre() {
 		Arrays.sort(GestionPrograma.agrupaciones, new Comparator<Agrupacion>() {
-	        public int compare(Agrupacion a1, Agrupacion a2) {
-	            return a1.getNombre().compareTo(a2.getNombre());
-	        }
-	    });
+			public int compare(Agrupacion a1, Agrupacion a2) {
+				return a1.getNombre().compareTo(a2.getNombre());
+			}
+		});
 	}
 	
 	private static void ordenarPorAutor() {

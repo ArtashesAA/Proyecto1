@@ -13,18 +13,18 @@ public class Integrantes {
 			mostrarMenuIntegrantes();
 			opc = Util.leerInt("Opción [0 - Volver] : ");
 			switch (opc) {
-				case 1 -> addParticipante();
-				case 2 -> delParticipante();
-				case 3 -> editParticipante();
-				
-				case 4 -> listarParticipantes();
-				case 5 -> listarAgrupacionesParticipante();
-				
-				case 6 -> ordenarPorNombre();
+			case 1 -> addParticipante();
+			case 2 -> delParticipante();
+			case 3 -> editParticipante();
+
+			case 4 -> listarParticipantes();
+			case 5 -> listarAgrupacionesParticipante();
+
+			case 6 -> ordenarPorNombre();
 			}
 		} while (opc != 0);
 	}
-	
+
 	private static void mostrarMenuIntegrantes() {
 		Util.escribir("\n");
 		Util.escribir("┌──────────────────────────┐");
@@ -37,33 +37,33 @@ public class Integrantes {
 		Util.escribir("  5. Listar agrupaciones donde es integrante.");
 		Util.escribir("  6. Ordenar por el nombre.");
 	}
-	
+
 	private static void addParticipante() {
-		
+
 	}
-	
+
 	private static void delParticipante() {
-			
+
 	}
-	
+
 	private static void editParticipante() {
-		
+
 	}
-	
+
 	private static void listarParticipantes() {
-		
+
 	}
-	
+
 	private static void listarAgrupacionesParticipante() {
-		
+
 	}
-	
+
 	private static void ordenarPorNombre() {
 		Arrays.sort(GestionPrograma.agrupaciones, new Comparator<Agrupacion>() {
-	        public int compare(Agrupacion a1, Agrupacion a2) {
-	            return a1.getNombre().compareTo(a2.getNombre());
-	        }
-	    });
+			public int compare(Agrupacion a1, Agrupacion a2) {
+				return a1.getNombre().compareTo(a2.getNombre());
+			}
+		});
 	}
-	
+
 }

@@ -1,24 +1,20 @@
 package model;
 
 public class Chirigota extends AgrupacionOficial implements Callejera {
-	
+
 	private String numero_cuples;
-	
+
 	public Chirigota() {
-		
+
 	}
-	
-	
 
 	public String getNumero_cuples() {
 		return numero_cuples;
 	}
 
-
 	public void setNumero_cuples(String numero_cuples) {
 		this.numero_cuples = numero_cuples;
 	}
-
 
 	@Override
 	public String cantarPresentacion() {
@@ -34,14 +30,10 @@ public class Chirigota extends AgrupacionOficial implements Callejera {
 		return "El chirigota " + super.getNombre() + " va de " + super.getDisfraz();
 	}
 
-
-
 	@Override
 	public String amoAescucha() {
 		return "Amo a escuchá la chirigota " + super.getNombre();
 	}
-
-
 
 	@Override
 	public String toString() {
@@ -49,7 +41,5 @@ public class Chirigota extends AgrupacionOficial implements Callejera {
 				+ ", caminitoDelFalla()=" + caminitoDelFalla() + ", hacerTipo()=" + hacerTipo() + ", amoAescucha()="
 				+ amoAescucha() + "]";
 	}
-	
 
-	
 }

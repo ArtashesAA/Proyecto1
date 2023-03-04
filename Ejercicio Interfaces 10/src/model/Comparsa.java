@@ -1,21 +1,20 @@
 package model;
 
-public class Comparsa extends AgrupacionOficial{
-	
+public class Comparsa extends AgrupacionOficial {
+
 	private String empresa_atrezzo;
-	
+
 	public Comparsa() {
-		
+
 	}
-	
-	
+
 	public String getEmpresa_atrezzo() {
 		return empresa_atrezzo;
 	}
+
 	public void setEmpresa_atrezzo(String empresa_atrezzo) {
 		this.empresa_atrezzo = empresa_atrezzo;
 	}
-
 
 	@Override
 	public String cantarPresentacion() {
@@ -31,7 +30,6 @@ public class Comparsa extends AgrupacionOficial{
 		return "La comparsa " + super.getNombre() + " va de " + super.getDisfraz();
 	}
 
-
 	@Override
 	public String toString() {
 		return "Comparsa [getEmpresa_atrezzo()=" + getEmpresa_atrezzo() + ", cantarPresentacion()="
@@ -39,11 +37,4 @@ public class Comparsa extends AgrupacionOficial{
 				+ "]";
 	}
 
-
-	
-
-
-	
-	
-	
 }

@@ -1,18 +1,17 @@
 package model;
 
-public class Integrante{
+public class Integrante {
 
 	private static Integer numeroParticipante = 0;
 	private Integer numero;
 	private String nombre;
 	private Integer edad;
-	private String localidad; 
-	
+	private String localidad;
 
 	public Integrante() {
 		numeroParticipante++;
 	}
-	
+
 	public static Integer getNumeroParticipante() {
 		return numeroParticipante;
 	}
@@ -54,7 +53,5 @@ public class Integrante{
 		return "Integrante [getNombre()=" + getNombre() + ", getEdad()=" + getEdad() + ", getLocalidad()="
 				+ getLocalidad() + ", getNumero()=" + getNumero() + "]";
 	}
-
-	
 
 }

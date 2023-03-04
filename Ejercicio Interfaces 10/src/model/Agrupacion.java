@@ -2,19 +2,19 @@ package model;
 
 import java.util.Comparator;
 
-public abstract class Agrupacion implements Comparator<Agrupacion>{
+public abstract class Agrupacion implements Comparator<Agrupacion> {
 	private String nombre;
 	private String autor;
 	private String autor_musica;
 	private String autor_letras;
 	private String disfraz;
-	
+
 	public Agrupacion() {
-		
+
 	}
 
 	public Agrupacion(String nombre, String autor, String autor_musica, String autor_letras, String disfraz) {
-		
+
 		this.nombre = nombre;
 		this.autor = autor;
 		this.autor_musica = autor_musica;
@@ -63,15 +63,14 @@ public abstract class Agrupacion implements Comparator<Agrupacion>{
 	}
 
 	public abstract String cantarPresentacion();
-	
+
 	public abstract String hacerTipo();
-	
-	
+
 	@Override
 	public int compare(Agrupacion o1, Agrupacion o2) {
 		return o1.getNombre().compareTo(o2.getNombre());
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Agrupacion [getNombre()=" + getNombre() + ", getAutor()=" + getAutor() + ", getAutor_musica()="
@@ -79,7 +78,4 @@ public abstract class Agrupacion implements Comparator<Agrupacion>{
 				+ "]";
 	}
 
-	
-	
-	
 }

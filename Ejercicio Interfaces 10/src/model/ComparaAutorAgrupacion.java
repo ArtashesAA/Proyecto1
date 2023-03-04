@@ -2,7 +2,7 @@ package model;
 
 import java.util.Comparator;
 
-public class ComparaAutorAgrupacion implements Comparator<Agrupacion>{
+public class ComparaAutorAgrupacion implements Comparator<Agrupacion> {
 
 	@Override
 	public int compare(Agrupacion o1, Agrupacion o2) {

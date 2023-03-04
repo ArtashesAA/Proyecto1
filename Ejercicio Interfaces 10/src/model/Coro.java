@@ -1,24 +1,26 @@
 package model;
 
-public class Coro extends AgrupacionOficial{
+public class Coro extends AgrupacionOficial {
 
-	
 	private int bandurrias;
 	private int guitarras;
-	
+
 	public Coro() {
-		
+
 	}
-	
+
 	public int getBandurrias() {
 		return bandurrias;
 	}
+
 	public void setBandurrias(int bandurrias) {
 		this.bandurrias = bandurrias;
 	}
+
 	public int getGuitarras() {
 		return guitarras;
 	}
+
 	public void setGuitarras(int guitarras) {
 		this.guitarras = guitarras;
 	}
@@ -44,11 +46,4 @@ public class Coro extends AgrupacionOficial{
 				+ ", hacerTipo()=" + hacerTipo() + "]";
 	}
 
-	
-
-	
-	
-	
-	
-	
 }
