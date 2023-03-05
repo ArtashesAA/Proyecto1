@@ -7,10 +7,42 @@ import java.util.Comparator;
 import model.Agrupacion;
 import model.AgrupacionOficial;
 
+/**
+ * 
+ * <h2>Clase Controller COAC
+ * <h2>
+ * 
+ * @author Artashes
+ * @since 05-03-2023
+ *
+ */
+
 public class COAC {
+
+	/**
+	 * Atributo numero de agrupaciones
+	 */
 	int num_agrupaciones;
+
+	/**
+	 * Atributo array de agrupaciones
+	 */
 	public static Agrupacion[] agrupaciones;
+
+	/**
+	 * Atributo array de agrupaciones oficiales
+	 */
 	public AgrupacionOficial[] agrupacionesOficiales;
+
+	/**
+	 * 
+	 * @param agrupacion
+	 * @return
+	 *         <ul>
+	 *         <li>true:Si se ha podido inscribir la agrupacion en el array</li>
+	 *         <li>false:Si no se ha podido inscribir la agrupacion en el array</li>
+	 *         </ul>
+	 */
 
 	public boolean inscribir_agrupacion(Agrupacion agrupacion) {
 		num_agrupaciones++;
@@ -26,6 +58,16 @@ public class COAC {
 		return added;
 	}
 
+	/**
+	 * 
+	 * @param agrupacion
+	 * @return
+	 *         <ul>
+	 *         <li>true:Si se ha podido eliminar la agrupacion en el array</li>
+	 *         <li>false:Si no se ha podido eliminar la agrupacion en el array</li>
+	 *         </ul>
+	 */
+
 	public boolean eliminar_agrupacion(Agrupacion agrupacion) {
 		for (int i = 0; i < agrupaciones.length; i++) {
 			if (agrupaciones[i] != null && agrupaciones[i].getNombre().equals(agrupacion.getNombre())) {
@@ -36,6 +78,10 @@ public class COAC {
 
 		return false;
 	}
+
+	/**
+	 * Método para ordenar por puntos
+	 */
 
 	public void ordenar_por_puntos() {
 		for (int i = 0; i < agrupacionesOficiales.length; i++) {
@@ -49,6 +95,10 @@ public class COAC {
 		}
 	}
 
+	/**
+	 * Método para ordenar por nombre
+	 */
+
 	public void ordenar_por_nombre() {
 		for (int i = 0; i < agrupaciones.length; i++) {
 			for (int j = i + 1; j < agrupaciones.length; j++) {
@@ -61,6 +111,10 @@ public class COAC {
 		}
 	}
 
+	/**
+	 * Método para ordenar por autor
+	 */
+
 	public void ordenar_por_autor() {
 		for (int i = 0; i < agrupaciones.length; i++) {
 			for (int j = i + 1; j < agrupaciones.length; j++) {
@@ -72,6 +126,10 @@ public class COAC {
 			}
 		}
 	}
+
+	/**
+	 * Método para listar el array de agrupaciones
+	 */
 
 	public void verAgrupacionesConcurso() {
 		System.out.println("Agrupaciones del concurso:");
